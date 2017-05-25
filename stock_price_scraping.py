@@ -1,5 +1,6 @@
 import pandas_datareader as data
 
-d = data.DataReader("AAPL", 'google', '2017-01-01', '2017-05-22')
+DATA_SOURCE = 'google'
 
-print(d)
+def getStockDate(ticker, start_date, end_date):
+    return data.DataReader(ticker, DATA_SOURCE, start_date, end_datec)
